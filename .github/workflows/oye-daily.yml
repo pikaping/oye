@@ -34,6 +34,7 @@ jobs:
         with:
           # Si usas tu suscripción de Claude en vez de una API key, cambia esta línea por:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          display_report: true
           # anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
             Eres el orquestador de la sesión diaria de Oye.
