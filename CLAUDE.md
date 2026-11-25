@@ -88,3 +88,4 @@ Si ninguna tarea llega a commit, no hagas push de nada salvo el diario explicand
 - Los agentes nunca escriben en `.github/`. Si un hito necesita un workflow nuevo, se escribe en `ci/<nombre>.yml`,
   con sus tests si procede, y se anota en `NOTES.md`, sección "Pendiente del autor":
   "Mover `ci/<nombre>.yml` a `.github/workflows/`". El hito cuenta como hecho cuando el archivo está listo.
+- Las líneas del buzón que terminan en `| sint` son frases escritas imitando un estilo real: se importan con `synthetic: true`, sin el sufijo.
