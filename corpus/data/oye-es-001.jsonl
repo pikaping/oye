@@ -1,0 +1,50 @@
+{"id": "oye-0001", "text": "¿Cuánto me queda en la cuenta?", "intent": "check_balance", "region": "es-ES", "features": [], "synthetic": true}
+{"id": "oye-0002", "text": "oye, ¿cuánta lana tengo en la tarjeta?", "intent": "check_balance", "region": "es-MX", "features": ["slang"], "synthetic": true}
+{"id": "oye-0003", "text": "Decime cuánta plata me queda en la cuenta, che", "intent": "check_balance", "region": "es-AR", "features": ["slang"], "synthetic": true}
+{"id": "oye-0004", "text": "saldo pls", "intent": "check_balance", "region": "es-ES", "features": ["ellipsis", "abbreviation"], "synthetic": true}
+{"id": "oye-0005", "text": "A ver, ¿cuánto dinero me queda este mes?", "intent": "check_balance", "region": "es-CO", "features": ["filler"], "synthetic": true}
+{"id": "oye-0006", "text": "quiero ver mi balance, porfa", "intent": "check_balance", "region": "es-MX", "features": ["abbreviation"], "synthetic": true}
+{"id": "oye-0007", "text": "Cancela mi pedido, anda, que me he equivocado", "intent": "cancel_order", "region": "es-ES", "features": ["filler"], "synthetic": true}
+{"id": "oye-0008", "text": "quiero cancelar la orden que hice ayer, ¿se puede?", "intent": "cancel_order", "region": "es-MX", "features": [], "synthetic": true}
+{"id": "oye-0009", "text": "Che, cancelame el pedido que no llega más", "intent": "cancel_order", "region": "es-AR", "features": ["slang"], "synthetic": true}
+{"id": "oye-0010", "text": "cancela el pedio ya", "intent": "cancel_order", "region": "es-ES", "features": ["typo", "ellipsis"], "synthetic": true}
+{"id": "oye-0011", "text": "Se me hizo tarde, ¿puedo dar de baja mi pedidito?", "intent": "cancel_order", "region": "es-MX", "features": ["diminutive"], "synthetic": true}
+{"id": "oye-0012", "text": "Quiero anular la compra, la verdad ya no la necesito", "intent": "cancel_order", "region": "es-CL", "features": ["filler"], "synthetic": true}
+{"id": "oye-0013", "text": "Pásame con una persona, por favor", "intent": "talk_to_human", "region": "es-ES", "features": [], "synthetic": true}
+{"id": "oye-0014", "text": "no quiero hablar con un bot, quiero un humano", "intent": "talk_to_human", "region": "es-MX", "features": [], "synthetic": true}
+{"id": "oye-0015", "text": "Pasame con alguien de verdad, che", "intent": "talk_to_human", "region": "es-AR", "features": ["slang"], "synthetic": true}
+{"id": "oye-0016", "text": "agente humano ya", "intent": "talk_to_human", "region": "es-CO", "features": ["ellipsis"], "synthetic": true}
+{"id": "oye-0017", "text": "¿Hay algún asesor disponible o qué?", "intent": "talk_to_human", "region": "es-CL", "features": ["filler"], "synthetic": true}
+{"id": "oye-0018", "text": "necesito hablar con un ejecutivo, urge", "intent": "talk_to_human", "region": "es-MX", "features": [], "synthetic": true}
+{"id": "oye-0019", "text": "Esto es una vergüenza, llevo una semana esperando", "intent": "complaint", "region": "es-ES", "features": [], "synthetic": true}
+{"id": "oye-0020", "text": "Qué poca madre, me cobraron dos veces", "intent": "complaint", "region": "es-MX", "features": ["slang"], "synthetic": true}
+{"id": "oye-0021", "text": "Es un desastre, nadie me responde nada", "intent": "complaint", "region": "es-AR", "features": [], "synthetic": true}
+{"id": "oye-0022", "text": "Tengo una queja: el servicio es pésimo", "intent": "complaint", "region": "es-CO", "features": [], "synthetic": true}
+{"id": "oye-0023", "text": "Me llegó roto el paquete, ¡una porquería!", "intent": "complaint", "region": "es-CL", "features": ["slang"], "synthetic": true}
+{"id": "oye-0024", "text": "vaya tela, otra vez la app sin funcionar", "intent": "complaint", "region": "es-ES", "features": ["slang"], "synthetic": true}
+{"id": "oye-0025", "text": "Quiero pedir una cita para la semana que viene", "intent": "book_appointment", "region": "es-ES", "features": [], "synthetic": true}
+{"id": "oye-0026", "text": "¿Me puedes agendar una cita con el doctor mañana?", "intent": "book_appointment", "region": "es-MX", "features": [], "synthetic": true}
+{"id": "oye-0027", "text": "Necesito sacar turno para el martes, ¿hay lugar?", "intent": "book_appointment", "region": "es-AR", "features": [], "synthetic": true}
+{"id": "oye-0028", "text": "una citita pa el viernes, ¿se puede?", "intent": "book_appointment", "region": "es-CO", "features": ["diminutive", "abbreviation"], "synthetic": true}
+{"id": "oye-0029", "text": "reservar hora para el dentista, eh, el jueves", "intent": "book_appointment", "region": "es-CL", "features": ["filler"], "synthetic": true}
+{"id": "oye-0030", "text": "¿Tienes hueco mañana por la tarde?", "intent": "book_appointment", "region": "es-ES", "features": [], "synthetic": true}
+{"id": "oye-0031", "text": "Hola, buenas", "intent": "greeting", "region": "es-ES", "features": [], "synthetic": true}
+{"id": "oye-0032", "text": "¡Qué onda! ¿Cómo andas?", "intent": "greeting", "region": "es-MX", "features": ["slang"], "synthetic": true}
+{"id": "oye-0033", "text": "Hola, che, ¿todo bien?", "intent": "greeting", "region": "es-AR", "features": ["slang"], "synthetic": true}
+{"id": "oye-0034", "text": "buenas tardes, ¿qué más?", "intent": "greeting", "region": "es-CO", "features": [], "synthetic": true}
+{"id": "oye-0035", "text": "Holi, ¿hay alguien por ahí?", "intent": "greeting", "region": "es-MX", "features": ["diminutive"], "synthetic": true}
+{"id": "oye-0036", "text": "Wena, ¿cómo estai?", "intent": "greeting", "region": "es-CL", "features": ["slang"], "synthetic": true}
+{"id": "oye-0037", "text": "Gracias, eso era todo", "intent": "farewell", "region": "es-ES", "features": [], "synthetic": true}
+{"id": "oye-0038", "text": "Listo, muchas gracias, ¡hasta luego!", "intent": "farewell", "region": "es-MX", "features": [], "synthetic": true}
+{"id": "oye-0039", "text": "Dale, gracias, nos vemos", "intent": "farewell", "region": "es-AR", "features": ["slang"], "synthetic": true}
+{"id": "oye-0040", "text": "chao, que estés bien", "intent": "farewell", "region": "es-CO", "features": [], "synthetic": true}
+{"id": "oye-0041", "text": "ok gracias, bye", "intent": "farewell", "region": "es-MX", "features": ["code-switching"], "synthetic": true}
+{"id": "oye-0042", "text": "Ya está, ¡hasta otra!", "intent": "farewell", "region": "es-ES", "features": [], "synthetic": true}
+{"id": "oye-0043", "text": "¿A qué hora abren mañana?", "intent": "opening_hours", "region": "es-ES", "features": [], "synthetic": true}
+{"id": "oye-0044", "text": "¿Hasta qué hora están abiertos hoy?", "intent": "opening_hours", "region": "es-MX", "features": [], "synthetic": true}
+{"id": "oye-0045", "text": "¿Abren los domingos o no?", "intent": "opening_hours", "region": "es-AR", "features": [], "synthetic": true}
+{"id": "oye-0046", "text": "Quiero cambiar mi contraseña", "intent": "reset_password", "region": "es-ES", "features": [], "synthetic": true}
+{"id": "oye-0047", "text": "se me olvidó la contraseña, ¿qué hago?", "intent": "reset_password", "region": "es-MX", "features": [], "synthetic": true}
+{"id": "oye-0048", "text": "no me acuerdo de la clave, che", "intent": "reset_password", "region": "es-AR", "features": ["slang"], "synthetic": true}
+{"id": "oye-0049", "text": "Me gustaría hacer un cambio, o sea, devolver esto", "intent": "return_item", "region": "es-CL", "features": ["filler"], "synthetic": true}
+{"id": "oye-0050", "text": "¿Cómo devuelvo unos zapatos que me quedan chicos?", "intent": "return_item", "region": "es-ES", "features": [], "synthetic": true}
