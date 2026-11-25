@@ -32,11 +32,28 @@ jobs:
 
       - uses: anthropics/claude-code-action@v1
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          # anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Si usas tu suscripción de Claude en vez de una API key, cambia esta línea por:
+          # claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
-            Eres el orquestador de la sesión diaria de Oye. Sigue la sección
-            "Sesión diaria" de CLAUDE.md al pie de la letra.
+            Eres el orquestador de la sesión diaria de Oye.
+
+            1. Ejecuta `date +%F` para saber la fecha de hoy.
+            2. El hito activo es el primer hito sin marcar en ROADMAP.md. Ignora si su fecha es
+               anterior o posterior a hoy: siempre hay un hito activo mientras quede alguno sin marcar.
+            3. Sigue el flujo de la sección "Sesión diaria" de CLAUDE.md, delegando en los
+               subagentes con la herramienta Agent. Nunca termines sin haber intentado al menos una tarea.
+            4. Al final, escribe un resumen: hito activo, tareas planificadas, commits hechos,
+               tareas descartadas y por qué.
           claude_args: |
             --max-turns 120
             --allowedTools "Agent,Read,Edit,Write,Glob,Grep,Bash(date:*),Bash(ls:*),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(git restore:*),Bash(git clean:*),Bash(python:*),Bash(pip install:*),Bash(pytest:*)"
+
+      - name: Guardar el log de la sesión
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: claude-session-log
+          path: /home/runner/work/_temp/claude-execution-output.json
+          if-no-files-found: ignore
+          retention-days: 14

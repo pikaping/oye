@@ -16,7 +16,8 @@ Oye es un kit open source para probar agentes conversacionales con lenguaje real
 - Código, docstrings y documentación en inglés. Los datos del corpus, en español.
 - Nunca subas claves, tokens ni datos personales. Las frases del corpus van anonimizadas.
 - Nada de commits de relleno: si el hito está atascado, mejora tests o documentación del hito actual.
-- No modifiques `.github/`, `.claude/`, `LICENSE` ni este archivo.
+- No modifiques `.github/`, `.claude/`, `scripts/`, `LICENSE` ni este archivo.
+- No publiques nada en LinkedIn ni en ningún otro sitio: eso lo hace solo el workflow de LinkedIn.
 
 ## Estructura
 
@@ -29,7 +30,9 @@ plugins/genkit Plugin de Oye para Genkit
 starter/       Oye Starter (plantilla ADK)
 tests/
 docs/
-journal/       Diario diario de la sesión (lo escribe el chronicler)
+journal/       Diario de cada sesión (lo escribe el chronicler)
+posts/         Plan y borradores de LinkedIn (los escribe el writer; los publica oye-linkedin.yml)
+scripts/       Publicación en LinkedIn
 ```
 
 ## Sesión diaria (orquestación)
@@ -37,7 +40,7 @@ journal/       Diario diario de la sesión (lo escribe el chronicler)
 La sesión la dirige el orquestador, que delega en los subagentes de `.claude/agents/`.
 El orquestador no escribe código: coordina, decide y es el único que hace commits y push.
 
-1. **planner** → devuelve 3-5 tareas para el hito activo de ROADMAP.md.
+1. **planner** → devuelve 3-5 tareas para el hito activo: el primer hito sin marcar de ROADMAP.md, sea cual sea su fecha.
 2. Para cada tarea, en orden:
    1. **builder** implementa la tarea.
    2. **tester** añade tests y ejecuta `pytest`.
@@ -48,6 +51,7 @@ El orquestador no escribe código: coordina, decide y es el único que hace comm
    5. Si tras los intentos la tarea sigue sin pasar, descarta sus cambios con `git restore .` y `git clean -fd` (solo archivos sin seguimiento de esa tarea), anótalo en `NOTES.md` y pasa a la siguiente.
 3. Si el hito queda completo, marca [x] en ROADMAP.md en el último commit.
 4. **chronicler** escribe el diario del día; el orquestador lo añade en un commit `docs(journal): ...`.
+   Si hoy es lunes, **writer** redacta además el post del martes en `posts/`, y el orquestador lo añade en un commit `docs(posts): ...`.
 5. `git push` a main.
 
 Si ninguna tarea llega a commit, no hagas push de nada salvo el diario explicando por qué.

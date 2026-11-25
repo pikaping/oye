@@ -1,0 +1,57 @@
+# Plan de posts de LinkedIn
+
+Un post por semana, los martes. El writer redacta el borrador el lunes a partir de este tema y del diario de la semana.
+Los marcados [ES+EN] llevan versión en español y en inglés en el mismo post.
+
+- 2026-12-01 · Arranque: «oye que al final no llego el viernes». Por qué construyo Oye
+- 2026-12-08 · Frases reales que he recopilado y por qué romperían un bot
+- 2026-12-15 · Oye se construye cada mañana con un equipo de agentes: así es la arquitectura
+- 2026-12-22 · Lo que la gente le escribe a un bot en Nochebuena
+- 2026-12-29 · Mi año en IA conversacional y lo que viene con Oye en 2027
+- 2027-01-05 · Primer mes de Oye: números y sorpresas
+- 2027-01-12 · Caso práctico: Dialogflow CX con frases de manual vs frases de Oye Corpus
+- 2027-01-19 · ¿Gemini genera frases reales o suenan artificiales?
+- 2027-01-26 · Seis semanas con agentes haciendo commits: lo que funciona y lo que no
+- 2027-02-02 · Carrusel: 10 frases que rompen cualquier bot
+- 2027-02-09 · [ES+EN] Oye Corpus llega a Hugging Face
+- 2027-02-16 · Lo que aprendí construyendo Oye Corpus
+- 2027-02-23 · Probamos los bots como si fueran formularios: presento Oye Test
+- 2027-03-02 · Decisiones técnicas: por qué Python, CLI y plugins
+- 2027-03-09 · Vídeo de 60 s: Oye Test en acción
+- 2027-03-16 · Problemas resueltos vs intenciones reconocidas
+- 2027-03-23 · Gemini haciendo de usuario impaciente
+- 2027-03-30 · El primer fallo gordo que encontró Oye
+- 2027-04-06 · Oye Test ya se puede usar: cómo lo uso yo
+- 2027-04-13 · Lo que he aprendido de los primeros usuarios
+- 2027-04-20 · Por qué Oye va a hablar con Genkit
+- 2027-04-27 · [ES+EN] Plugin de Oye para Genkit: prueba tus flows con frases reales
+- 2027-05-04 · El agente no se despliega si empeora: Oye en CI
+- 2027-05-11 · Contribuidor destacado del mes
+- 2027-05-18 · [ES+EN] Lanzo Oye Test 1.0
+- 2027-05-25 · Medio año construyendo Oye en abierto: qué he hecho yo y qué han hecho los agentes
+- 2027-06-01 · Lo que los tests no ven: presento Oye Watch
+- 2027-06-08 · Detectar bucles en conversaciones
+- 2027-06-15 · Detectar frustración con Gemini sin leer cada conversación
+- 2027-06-22 · «Quiero hablar con una persona»: la métrica más honesta
+- 2027-06-29 · Analizar conversaciones desde BigQuery
+- 2027-07-06 · El ciclo de Oye: lo que falla en producción vuelve a los tests
+- 2027-07-13 · 3 hallazgos de Oye Watch en un bot real
+- 2027-07-20 · Oye Watch en mi propio bot: la primera semana
+- 2027-07-27 · [ES+EN] Oye Watch en beta
+- 2027-08-03 · Lecturas de verano sobre diseño conversacional
+- 2027-08-10 · ¿Los agentes LLM acaban con el diseño conversacional?
+- 2027-08-17 · Lo que ha aportado la comunidad este año
+- 2027-08-24 · Vuelta del verano: adelanto de Oye Starter
+- 2027-08-31 · Presento Oye Starter: agentes bien diseñados desde el día uno
+- 2027-09-07 · Cómo hacer bien la salida a un humano
+- 2027-09-14 · Qué hace un agente cuando no entiende
+- 2027-09-21 · Respuestas cortas: controlar la longitud de un LLM
+- 2027-09-28 · [ES+EN] Oye se integra con el ADK
+- 2027-10-05 · Desplegar en Google Cloud paso a paso
+- 2027-10-12 · Alguien de la comunidad usa Oye en producción: su historia
+- 2027-10-19 · [ES+EN] Lanzo Oye Starter: de cero a agente en 10 minutos
+- 2027-10-26 · Propongo una charla sobre Oye (meetup o evento de Google)
+- 2027-11-02 · [ES+EN] Oye 1.0: corpus, tests, monitorización y plantilla
+- 2027-11-09 · Gracias a la comunidad, con nombres
+- 2027-11-16 · Lo que haría distinto si empezara hoy
+- 2027-11-23 · [ES+EN] Un año de Oye
