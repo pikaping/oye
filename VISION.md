@@ -21,7 +21,7 @@ Lema: *Test your agents with how people actually talk.*
 
 ## Fuera de alcance (sin aprobación del autor)
 
-- Servicios de pago, cuentas nuevas en terceros o cualquier cosa que genere costes.
+- Usar servicios de pago, crear cuentas en terceros o cualquier cosa que genere costes. Desarrollar integraciones con ellos sí está permitido (ver CLAUDE.md).
 - Recoger datos de usuarios reales o telemetría.
 - Cambiar la licencia, el nombre o el lema.
 - Reescribir o borrar hitos que ya están en el roadmap.
