@@ -71,9 +71,14 @@ Si ninguna tarea llega a commit, no hagas push de nada salvo el diario explicand
 - Antes de añadir un lote, el reviewer descarta cualquier frase que podría salir de un manual de atención al cliente.
 - Las frases sintéticas existentes que no cumplan esto se reescriben o se eliminan en el siguiente hito del corpus.
 
-## Sin servicios externos (por ahora)
+## Integraciones externas
 
-- El proyecto no usa ningún servicio externo: ni Google Cloud, ni Gemini, ni Hugging Face, ni PyPI, ni npm.
-- No se añaden dependencias de SDKs de terceros ni código que haga llamadas de red.
+- Las integraciones (Dialogflow CX, Vertex AI, Gemini, BigQuery, Genkit, ADK, Cloud Run) se desarrollan sin credenciales:
+  una interfaz común, una implementación real con el SDK oficial y una implementación falsa para los tests.
+- Los SDKs van como dependencias opcionales (extras en pyproject.toml, por ejemplo `oye[dialogflow]`), nunca obligatorias.
+- `pytest` nunca necesita credenciales ni red: los tests de la implementación real usan mocks del SDK.
+- La implementación real solo se activa si su credencial existe en el entorno. Si no existe, falla con un error que explica qué configurar.
+- Ninguna sesión diaria llama a servicios reales ni publica nada: ni Hugging Face, ni PyPI, ni npm, ni despliegues.
+  El paso final se anota en `NOTES.md`, sección "Pendiente del autor", con las instrucciones exactas.
+- Cada integración documenta en `docs/` cómo configurarla. Para los costes, enlaza a la página oficial de precios; nunca inventes cifras.
 - Los hitos marcados `(requiere aprobación: ...)` no se trabajan. Solo el autor puede quitar esa marca.
-- Al contar los hitos pendientes, el strategist no cuenta los bloqueados. Si propone algo que necesite un servicio externo, lo añade ya bloqueado.

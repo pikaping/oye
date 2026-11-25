@@ -48,4 +48,4 @@ jobs:
                tareas descartadas y por qué.
           claude_args: |
             --max-turns 120
-            --allowedTools "Agent,Read,Edit,Write,Glob,Grep,Bash(date:*),Bash(ls:*),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(git restore:*),Bash(git clean:*),Bash(python:*),Bash(pip install:*),Bash(pytest:*)"
+            --allowedTools "Agent,Read,Edit,Write,Glob,Grep,Bash(date:*),Bash(ls:*),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(git restore:*),Bash(git clean:*),Bash(python:*),Bash(pip install:*),Bash(pytest:*),Bash(npm install:*),Bash(npm ci:*),Bash(npm test:*),Bash(npm run:*)"
