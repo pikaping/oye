@@ -82,3 +82,9 @@ Si ninguna tarea llega a commit, no hagas push de nada salvo el diario explicand
   El paso final se anota en `NOTES.md`, sección "Pendiente del autor", con las instrucciones exactas.
 - Cada integración documenta en `docs/` cómo configurarla. Para los costes, enlaza a la página oficial de precios; nunca inventes cifras.
 - Los hitos marcados `(requiere aprobación: ...)` no se trabajan. Solo el autor puede quitar esa marca.
+
+## Workflows de GitHub
+
+- Los agentes nunca escriben en `.github/`. Si un hito necesita un workflow nuevo, se escribe en `ci/<nombre>.yml`,
+  con sus tests si procede, y se anota en `NOTES.md`, sección "Pendiente del autor":
+  "Mover `ci/<nombre>.yml` a `.github/workflows/`". El hito cuenta como hecho cuando el archivo está listo.
