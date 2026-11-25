@@ -49,11 +49,3 @@ jobs:
             --max-turns 120
             --allowedTools "Agent,Read,Edit,Write,Glob,Grep,Bash(date:*),Bash(ls:*),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(git restore:*),Bash(git clean:*),Bash(python:*),Bash(pip install:*),Bash(pytest:*)"
 
-      - name: Guardar el log de la sesión
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: claude-session-log
-          path: /home/runner/work/_temp/claude-execution-output.json
-          if-no-files-found: ignore
-          retention-days: 14
