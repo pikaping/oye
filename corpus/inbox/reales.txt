@@ -1,0 +1,46 @@
+# Una frase por línea, tal cual la escribiría alguien. Sin corregir nada.
+# Opcional: añade | intención | región si lo sabes. Si no, el equipo lo deduce.
+# Las líneas que terminan en | sint son frases escritas imitando un estilo real.
+# Ejemplos:
+# oye que al final no llego el viernes | cancel_booking | es-ES
+# q no me deja pagar
+Buenas, quiero cancelar el pedido q hice ayer se puede?? | cancel_order | es-ES | sint
+a ver es que me he equivocado de talla, como cancelo esto | cancel_order | es-ES | sint
+Cancelame el pedido porfa q ya no lo necesito xd | cancel_order | es-ES | sint
+Hola, se puede anular un pedido si ya pone enviado o ya no | cancel_order | es-ES | sint
+Llevo 3 semanas esperando el paquete y nadie me dice nada, joder | complaint | es-ES | sint
+el producto ha llegado roto y encima tarde... | complaint | es-ES | sint
+Pues vaya servicio, me cobrais dos veces y ni me contestais | complaint | es-ES | sint
+ostia q me ha llegado otra cosa q no es lo q pedi 🤣 | complaint | es-ES | sint
+Me pasas con una persona?? q esto no hay quien lo entienda | talk_to_human | es-ES | sint
+quiero hablar con alguien de verdad no con un bot xd | talk_to_human | es-ES | sint
+Hay alguien ahi o solo maquinas | talk_to_human | es-ES | sint
+a ver, pasame con un humano porfa | talk_to_human | es-ES | sint
+Cuanto me queda en la cuenta? | check_balance | es-ES | sint
+me dices el saldo q tengo porfa | check_balance | es-ES | sint
+Tengo pasta en la cuenta o ya no xd | check_balance | es-ES | sint
+No me deja entrar, creo q he puesto mal la contraseña mil veces | reset_password | es-ES | sint
+como cambio la contraseña q no me acuerdo | reset_password | es-ES | sint
+me ha bloqueado la cuenta x poner mal la clave, q hago | reset_password | es-ES | sint
+sorry pero no me llega el codigo pa entrar | reset_password | es-ES | sint
+Quiero devolver unas zapas q me quedan pequeñas, como lo hago | return_item | es-ES | sint
+se puede devolver algo si ya lo he abierto o no | return_item | es-ES | sint
+Buenas, el plazo de devolucion cuanto es? | return_item | es-ES | sint
+A que hora abris mañana? | opening_hours | es-ES | sint
+estais abiertos el finde? | opening_hours | es-ES | sint
+Hasta q hora se puede llamar hoy | opening_hours | es-ES | sint
+Quiero pedir cita pa la semana q viene, hay hueco? | book_appointment | es-ES | sint
+me dais cita el jueves x la tarde?? | book_appointment | es-ES | sint
+a ver, necesito cambiar la cita del lunes q no puedo ir | book_appointment | es-ES | sint
+Holaa buenas | greeting | es-ES | sint
+ey q tal | greeting | es-ES | sint
+Vale gracias, ya esta | farewell | es-ES | sint
+ok perfe, gracias!! | farewell | es-ES | sint
+Donde esta mi pedido? pone q llegaba ayer | track_order | es-ES | sint
+sabeis algo del paquete? q no me llega | track_order | es-ES | sint
+el pedido sigue en reparto desde el lunes, es normal?? | track_order | es-ES | sint
+el link de seguimiento no funciona, me sale error random | track_order | es-ES | sint
+No me deja pagar con la tarjeta, me da error todo el rato | payment_failed | es-ES | sint
+me ha cobrado pero el pedido no aparece xd | payment_failed | es-ES | sint
+Intento pagar y se queda cargando... | payment_failed | es-ES | sint
+literal llevo una hora intentando pagar | payment_failed | es-ES | sint

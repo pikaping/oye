@@ -88,4 +88,13 @@ Si ninguna tarea llega a commit, no hagas push de nada salvo el diario explicand
 - Los agentes nunca escriben en `.github/`. Si un hito necesita un workflow nuevo, se escribe en `ci/<nombre>.yml`,
   con sus tests si procede, y se anota en `NOTES.md`, sección "Pendiente del autor":
   "Mover `ci/<nombre>.yml` a `.github/workflows/`". El hito cuenta como hecho cuando el archivo está listo.
-- Las líneas del buzón que terminan en `| sint` son frases escritas imitando un estilo real: se importan con `synthetic: true`, sin el sufijo.
+
+## Frases del buzón
+
+- Al empezar cada sesión, si `corpus/inbox/reales.txt` tiene frases (líneas que no empiezan por `#`), procesarlas es la primera tarea del día, antes del hito activo.
+- Cada frase pasa al corpus con el texto EXACTAMENTE como está: ni una tilde, mayúscula o letra corregida. Las faltas son el valor de la frase.
+- Las líneas que terminan en `| sint` se importan con `synthetic: true`, sin ese sufijo. El resto son frases reales del autor y se importan con `synthetic: false`.
+- Si la línea trae `| intención | región`, se respetan. Si no, se deducen y se etiquetan los rasgos.
+- Si una frase contiene datos personales (nombres, teléfonos, correos, direcciones, números de cuenta), no se importa y se anota en `NOTES.md`, sección "Pendiente del autor".
+- Se ajustan los tests que supongan que todo el corpus es sintético o que cada archivo tiene un número fijo de líneas, sin relajar el resto de comprobaciones.
+- Al terminar, se borran del buzón las frases importadas y se dejan los comentarios.
