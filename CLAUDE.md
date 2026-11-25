@@ -70,3 +70,10 @@ Si ninguna tarea llega a commit, no hagas push de nada salvo el diario explicand
 - Al menos un tercio de cada lote lleva `typo`: tildes omitidas, letras cambiadas, sin mayúsculas, sin signos de apertura.
 - Antes de añadir un lote, el reviewer descarta cualquier frase que podría salir de un manual de atención al cliente.
 - Las frases sintéticas existentes que no cumplan esto se reescriben o se eliminan en el siguiente hito del corpus.
+
+## Sin servicios externos (por ahora)
+
+- El proyecto no usa ningún servicio externo: ni Google Cloud, ni Gemini, ni Hugging Face, ni PyPI, ni npm.
+- No se añaden dependencias de SDKs de terceros ni código que haga llamadas de red.
+- Los hitos marcados `(requiere aprobación: ...)` no se trabajan. Solo el autor puede quitar esa marca.
+- Al contar los hitos pendientes, el strategist no cuenta los bloqueados. Si propone algo que necesite un servicio externo, lo añade ya bloqueado.
