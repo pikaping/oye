@@ -5,7 +5,7 @@ Un hito por semana. La semana empieza el lunes indicado.
 ## Fase 1 · Oye Corpus
 - [x] 2026-11-30 · Repo: README con el lema, licencia Apache 2.0, CONTRIBUTING, estructura de carpetas
 - [x] 2026-12-07 · Formato JSONL del corpus (frase, intención, región, rasgos) + primeras 100 frases
-- [ ] 2026-12-14 · Esquema de etiquetado + plantilla de issue para aportar frases
+- [x] 2026-12-14 · Esquema de etiquetado + plantilla de issue para aportar frases
 - [ ] 2026-12-21 · Validador de formato y duplicados
 - [ ] 2026-12-28 · Validación del corpus en CI para cada PR
 - [ ] 2027-01-04 · Campo de región + 300 frases

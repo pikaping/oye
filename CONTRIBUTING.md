@@ -38,6 +38,7 @@ The corpus lives in `corpus/data/*.jsonl`.
 - Phrases must be anonymized: no real names, phone numbers, emails, addresses or any other personal data.
 - Never commit keys, tokens or credentials.
 - Records must pass the corpus validator and schema.
+- To suggest a phrase, use the [contribute-phrase issue form](ci/ISSUE_TEMPLATE/contribute-phrase.yml) (it will live in `.github/ISSUE_TEMPLATE/` once moved). Paste the text exactly as written, typos included.
 
 ## Proposing changes
 

@@ -1,0 +1,54 @@
+name: Contribute a phrase
+description: Suggest a real or synthetic Spanish phrase for the Oye Corpus.
+title: "[phrase] "
+labels: ["corpus", "phrase"]
+body:
+  - type: textarea
+    id: text
+    attributes:
+      label: Text
+      description: Exact text, do not fix typos. Missing accents, lowercase and odd punctuation are the value of the phrase.
+      placeholder: ola q tal, necesito cambiar mi cita
+    validations:
+      required: true
+  - type: input
+    id: intent
+    attributes:
+      label: Intent
+      description: What the speaker wants (for example greeting, complaint, booking).
+  - type: input
+    id: region
+    attributes:
+      label: Region
+      description: Country or region where this is said (for example Mexico, Spain, Rioplatense).
+  - type: checkboxes
+    id: features
+    attributes:
+      label: Features
+      description: Colloquial features present in the phrase. See corpus/schema.json.
+      options:
+        - label: slang
+        - label: ellipsis
+        - label: typo
+        - label: diminutive
+        - label: code-switching
+        - label: filler
+        - label: abbreviation
+        - label: emoji
+        - label: repeated-punctuation
+        - label: missing-opening-mark
+  - type: checkboxes
+    id: origin
+    attributes:
+      label: Origin
+      description: Is this phrase real or synthetic?
+      options:
+        - label: This phrase is real (someone actually wrote or said it)
+        - label: This phrase is synthetic (I made it up)
+  - type: checkboxes
+    id: anonymized
+    attributes:
+      label: Anonymization
+      options:
+        - label: The phrase contains no personal data (names, phones, emails, addresses, account numbers).
+          required: true
