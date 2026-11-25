@@ -6,7 +6,7 @@ Oye is an open source kit for testing conversational agents with real, colloquia
 
 ## Components
 
-- **Oye Corpus**: a dataset of colloquial Spanish (JSONL), with schema and validator.
+- **Oye Corpus**: a dataset of colloquial Spanish (JSONL), with schema and validator. See [corpus/README.md](corpus/README.md).
 - **Oye Test**: a command-line tester for agents, with a Genkit plugin.
 - **Oye Watch**: analysis of conversations in production.
 - **Oye Starter**: an agent template built with the Agent Development Kit (ADK).
