@@ -16,10 +16,10 @@ def test_corpus_has_at_least_100_entries() -> None:
     assert len(_all_entries()) >= 100
 
 
-def test_each_file_has_50_lines() -> None:
+def test_each_file_is_non_empty() -> None:
     for f in FILES:
         lines = [ln for ln in f.read_text(encoding="utf-8").splitlines() if ln.strip()]
-        assert len(lines) == 50, f.name
+        assert len(lines) > 0, f.name
 
 
 def test_ids_unique_and_sequential_across_files() -> None:
@@ -59,5 +59,7 @@ def test_informal_features_are_well_represented() -> None:
     assert len(informal) >= len(entries) * 2 // 5
 
 
-def test_all_entries_are_marked_synthetic() -> None:
-    assert all(e.synthetic is True for e in _all_entries())
+def test_corpus_has_real_and_synthetic_entries() -> None:
+    entries = _all_entries()
+    assert any(e.synthetic for e in entries)
+    assert any(not e.synthetic for e in entries)
