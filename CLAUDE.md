@@ -16,7 +16,9 @@ Oye es un kit open source para probar agentes conversacionales con lenguaje real
 - Código, docstrings y documentación en inglés. Los datos del corpus, en español.
 - Nunca subas claves, tokens ni datos personales. Las frases del corpus van anonimizadas.
 - Nada de commits de relleno: si el hito está atascado, mejora tests o documentación del hito actual.
-- No modifiques `.github/`, `.claude/`, `scripts/`, `LICENSE` ni este archivo.
+- No modifiques `.github/`, `.claude/`, `scripts/`, `LICENSE`, `VISION.md` ni este archivo.
+- Ejecuta siempre los tests con `pytest` a secas (no `python -m pytest`), que es como los ejecuta el orquestador antes de cada commit.
+- Si al construir o revisar descubres algo que falta pero no es de la tarea actual, anótalo en `NOTES.md`, sección "Ideas", en una línea. El strategist lo convertirá en hito si merece la pena.
 - No publiques nada en LinkedIn ni en ningún otro sitio: eso lo hace solo el workflow de LinkedIn.
 
 ## Estructura
@@ -31,6 +33,8 @@ starter/       Oye Starter (plantilla ADK)
 tests/
 docs/
 journal/       Diario de cada sesión (lo escribe el chronicler)
+VISION.md      Brújula del proyecto (solo la edita el autor)
+NOTES.md       Ideas y deuda técnica que van apareciendo
 posts/         Plan y borradores de LinkedIn (los escribe el writer; los publica oye-linkedin.yml)
 scripts/       Publicación en LinkedIn
 ```
@@ -41,7 +45,8 @@ La sesión la dirige el orquestador, que delega en los subagentes de `.claude/ag
 El orquestador no escribe código: coordina, decide y es el único que hace commits y push.
 Los subagentes se lanzan siempre en primer plano, uno detrás de otro, esperando su resultado: la sesión no es interactiva y, si el orquestador termina su turno, todo lo que siga en marcha se cancela.
 
-1. **planner** → devuelve 3-5 tareas para el hito activo: el primer hito sin marcar de ROADMAP.md, sea cual sea su fecha.
+1. **planner** → devuelve 3-5 tareas para el hito activo: el primer hito sin marcar de ROADMAP.md, sea cual sea su fecha, saltándose los marcados `(requiere aprobación: ...)`.
+   Si el hito activo se completa y queda tiempo, sigue con el siguiente en la misma sesión (máximo 8 commits al día).
 2. Para cada tarea, en orden:
    1. **builder** implementa la tarea.
    2. **tester** añade tests y ejecuta `pytest`.
@@ -53,6 +58,8 @@ Los subagentes se lanzan siempre en primer plano, uno detrás de otro, esperando
 3. Si el hito queda completo, marca [x] en ROADMAP.md en el último commit.
 4. **chronicler** escribe el diario del día; el orquestador lo añade en un commit `docs(journal): ...`.
    Si hoy es lunes, **writer** redacta además el post del martes en `posts/`, y el orquestador lo añade en un commit `docs(posts): ...`.
+   Si hoy es viernes (`date +%u` = 5) o quedan menos de 5 hitos sin marcar, **strategist** revisa el roadmap,
+   y el orquestador añade sus cambios en un commit `docs(roadmap): ...`.
 5. `git push` a main.
 
 Si ninguna tarea llega a commit, no hagas push de nada salvo el diario explicando por qué.
