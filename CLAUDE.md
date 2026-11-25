@@ -63,3 +63,10 @@ Los subagentes se lanzan siempre en primer plano, uno detrás de otro, esperando
 5. `git push` a main.
 
 Si ninguna tarea llega a commit, no hagas push de nada salvo el diario explicando por qué.
+
+## Calidad del corpus
+
+- Toda frase sintética lleva al menos un rasgo coloquial. Nada de frases correctas y completas como "Buenos días, ¿qué tal?".
+- Al menos un tercio de cada lote lleva `typo`: tildes omitidas, letras cambiadas, sin mayúsculas, sin signos de apertura.
+- Antes de añadir un lote, el reviewer descarta cualquier frase que podría salir de un manual de atención al cliente.
+- Las frases sintéticas existentes que no cumplan esto se reescriben o se eliminan en el siguiente hito del corpus.
