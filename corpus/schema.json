@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/oye/oye/corpus/schema.json",
+  "title": "Oye Corpus entry",
+  "description": "One line of a corpus JSONL file.",
+  "type": "object",
+  "required": ["id", "text", "intent", "region", "features"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^oye-[0-9]{4,}$"},
+    "text": {"type": "string", "minLength": 1},
+    "intent": {"type": "string", "minLength": 1},
+    "region": {"type": "string", "minLength": 1},
+    "features": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": ["slang", "ellipsis", "typo", "diminutive", "code-switching", "filler", "abbreviation"]
+      }
+    },
+    "synthetic": {"type": "boolean", "default": false}
+  }
+}
