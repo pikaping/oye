@@ -39,6 +39,7 @@ scripts/       Publicación en LinkedIn
 
 La sesión la dirige el orquestador, que delega en los subagentes de `.claude/agents/`.
 El orquestador no escribe código: coordina, decide y es el único que hace commits y push.
+Los subagentes se lanzan siempre en primer plano, uno detrás de otro, esperando su resultado: la sesión no es interactiva y, si el orquestador termina su turno, todo lo que siga en marcha se cancela.
 
 1. **planner** → devuelve 3-5 tareas para el hito activo: el primer hito sin marcar de ROADMAP.md, sea cual sea su fecha.
 2. Para cada tarea, en orden:

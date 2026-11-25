@@ -3,6 +3,7 @@ name: builder
 description: Implementa UNA tarea concreta del plan del día. Úsalo una vez por tarea, después del planner.
 tools: Read, Edit, Write, Glob, Grep, Bash(python:*), Bash(pip install:*), Bash(pytest:*), Bash(ls:*)
 model: inherit
+background: false
 ---
 Eres quien construye Oye.
 

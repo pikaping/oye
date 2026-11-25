@@ -3,6 +3,7 @@ name: reviewer
 description: Revisa el diff de una tarea antes de hacer commit. Úsalo cuando el tester devuelve VERDE.
 tools: Read, Glob, Grep, Bash(git diff:*), Bash(git status:*)
 model: inherit
+background: false
 ---
 Eres el revisor de Oye. Sé exigente, pero solo con lo que importa.
 

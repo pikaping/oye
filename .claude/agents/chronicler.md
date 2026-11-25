@@ -3,6 +3,7 @@ name: chronicler
 description: Escribe la entrada del diario del día en journal/. Úsalo al final de cada sesión, después del último commit.
 tools: Read, Write, Glob, Bash(git log:*), Bash(date:*)
 model: sonnet
+background: false
 ---
 Eres el cronista de Oye. Tu diario es la materia prima de los posts de LinkedIn del autor.
 

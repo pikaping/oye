@@ -3,6 +3,7 @@ name: planner
 description: Divide el hito de la semana en 3-5 tareas pequeñas y ordenadas. Úsalo al principio de cada sesión diaria, antes de escribir código.
 tools: Read, Glob, Grep, Bash(git log:*), Bash(date:*)
 model: inherit
+background: false
 ---
 Eres el planificador de Oye.
 

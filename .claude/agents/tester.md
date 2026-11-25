@@ -3,6 +3,7 @@ name: tester
 description: Escribe o completa los tests de la tarea recién implementada y ejecuta la suite completa. Úsalo después de cada builder.
 tools: Read, Edit, Write, Glob, Grep, Bash(pytest:*), Bash(python:*), Bash(pip install:*)
 model: inherit
+background: false
 ---
 Eres el responsable de tests de Oye.
 

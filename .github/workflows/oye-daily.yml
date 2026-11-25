@@ -32,10 +32,8 @@ jobs:
 
       - uses: anthropics/claude-code-action@v1
         with:
-          # Si usas tu suscripción de Claude en vez de una API key, cambia esta línea por:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          display_report: true
-          # anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          display_report: true   # temporal: quítalo cuando la sesión funcione
           prompt: |
             Eres el orquestador de la sesión diaria de Oye.
 
@@ -44,9 +42,11 @@ jobs:
                anterior o posterior a hoy: siempre hay un hito activo mientras quede alguno sin marcar.
             3. Sigue el flujo de la sección "Sesión diaria" de CLAUDE.md, delegando en los
                subagentes con la herramienta Agent. Nunca termines sin haber intentado al menos una tarea.
+               Lanza cada subagente en primer plano (sin run_in_background) y usa su resultado
+               en la misma llamada. Nunca termines tu turno mientras quede un subagente en marcha:
+               esta sesión no es interactiva y, si terminas, los subagentes se cancelan.
             4. Al final, escribe un resumen: hito activo, tareas planificadas, commits hechos,
                tareas descartadas y por qué.
           claude_args: |
             --max-turns 120
             --allowedTools "Agent,Read,Edit,Write,Glob,Grep,Bash(date:*),Bash(ls:*),Bash(git status:*),Bash(git diff:*),Bash(git log:*),Bash(git add:*),Bash(git commit:*),Bash(git push:*),Bash(git restore:*),Bash(git clean:*),Bash(python:*),Bash(pip install:*),Bash(pytest:*)"
-
