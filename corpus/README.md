@@ -29,6 +29,10 @@ print(entries[0].text)
 
 `load_corpus` validates every line and raises `CorpusError` with `<path>:<line>` on the first invalid one.
 
+## Labeling
+
+See the [labeling guide](LABELING.md) for feature criteria, intents, regions and anonymization rules.
+
 ## Contributing
 
 1. Add entries to a file in `corpus/data/` (or a new `oye-es-NNN.jsonl`), with the next free `id`.
