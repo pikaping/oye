@@ -15,7 +15,7 @@
       "type": "array",
       "uniqueItems": true,
       "items": {
-        "enum": ["slang", "ellipsis", "typo", "diminutive", "code-switching", "filler", "abbreviation"]
+        "enum": ["slang", "ellipsis", "typo", "diminutive", "code-switching", "filler", "abbreviation", "emoji", "repeated-punctuation", "missing-opening-mark"]
       }
     },
     "synthetic": {"type": "boolean", "default": false}

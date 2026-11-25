@@ -1,16 +1,16 @@
-{"id": "oye-0101", "text": "Buenas, quiero cancelar el pedido q hice ayer se puede??", "intent": "cancel_order", "region": "es-ES", "features": ["abbreviation", "filler"], "synthetic": false}
+{"id": "oye-0101", "text": "Buenas, quiero cancelar el pedido q hice ayer se puede??", "intent": "cancel_order", "region": "es-ES", "features": ["abbreviation", "filler", "missing-opening-mark", "repeated-punctuation"], "synthetic": false}
 {"id": "oye-0102", "text": "a ver es que me he equivocado de talla, como cancelo esto", "intent": "cancel_order", "region": "es-ES", "features": ["filler", "typo"], "synthetic": false}
 {"id": "oye-0103", "text": "Cancelame el pedido porfa q ya no lo necesito xd", "intent": "cancel_order", "region": "es-ES", "features": ["typo", "abbreviation", "slang"], "synthetic": false}
 {"id": "oye-0104", "text": "Hola, se puede anular un pedido si ya pone enviado o ya no", "intent": "cancel_order", "region": "es-ES", "features": ["ellipsis"], "synthetic": false}
 {"id": "oye-0105", "text": "Llevo 3 semanas esperando el paquete y nadie me dice nada, joder", "intent": "complaint", "region": "es-ES", "features": ["slang"], "synthetic": false}
-{"id": "oye-0106", "text": "el producto ha llegado roto y encima tarde...", "intent": "complaint", "region": "es-ES", "features": ["ellipsis"], "synthetic": false}
+{"id": "oye-0106", "text": "el producto ha llegado roto y encima tarde...", "intent": "complaint", "region": "es-ES", "features": ["ellipsis", "repeated-punctuation"], "synthetic": false}
 {"id": "oye-0107", "text": "Pues vaya servicio, me cobrais dos veces y ni me contestais", "intent": "complaint", "region": "es-ES", "features": ["typo"], "synthetic": false}
-{"id": "oye-0108", "text": "ostia q me ha llegado otra cosa q no es lo q pedi 🤣", "intent": "complaint", "region": "es-ES", "features": ["slang", "abbreviation", "typo"], "synthetic": false}
-{"id": "oye-0109", "text": "Me pasas con una persona?? q esto no hay quien lo entienda", "intent": "talk_to_human", "region": "es-ES", "features": ["abbreviation"], "synthetic": false}
+{"id": "oye-0108", "text": "ostia q me ha llegado otra cosa q no es lo q pedi 🤣", "intent": "complaint", "region": "es-ES", "features": ["slang", "abbreviation", "typo", "emoji"], "synthetic": false}
+{"id": "oye-0109", "text": "Me pasas con una persona?? q esto no hay quien lo entienda", "intent": "talk_to_human", "region": "es-ES", "features": ["abbreviation", "missing-opening-mark", "repeated-punctuation"], "synthetic": false}
 {"id": "oye-0110", "text": "quiero hablar con alguien de verdad no con un bot xd", "intent": "talk_to_human", "region": "es-ES", "features": ["abbreviation", "slang"], "synthetic": false}
 {"id": "oye-0111", "text": "Hay alguien ahi o solo maquinas", "intent": "talk_to_human", "region": "es-ES", "features": ["typo"], "synthetic": false}
 {"id": "oye-0112", "text": "a ver, pasame con un humano porfa", "intent": "talk_to_human", "region": "es-ES", "features": ["filler", "typo"], "synthetic": false}
-{"id": "oye-0113", "text": "Cuanto me queda en la cuenta?", "intent": "check_balance", "region": "es-ES", "features": ["typo"], "synthetic": false}
+{"id": "oye-0113", "text": "Cuanto me queda en la cuenta?", "intent": "check_balance", "region": "es-ES", "features": ["typo", "missing-opening-mark"], "synthetic": false}
 {"id": "oye-0114", "text": "me dices el saldo q tengo porfa", "intent": "check_balance", "region": "es-ES", "features": ["abbreviation"], "synthetic": false}
 {"id": "oye-0115", "text": "Tengo pasta en la cuenta o ya no xd", "intent": "check_balance", "region": "es-ES", "features": ["slang"], "synthetic": false}
 {"id": "oye-0116", "text": "No me deja entrar, creo q he puesto mal la contraseña mil veces", "intent": "reset_password", "region": "es-ES", "features": ["abbreviation"], "synthetic": false}
@@ -19,22 +19,22 @@
 {"id": "oye-0119", "text": "sorry pero no me llega el codigo pa entrar", "intent": "reset_password", "region": "es-ES", "features": ["abbreviation", "code-switching", "typo"], "synthetic": false}
 {"id": "oye-0120", "text": "Quiero devolver unas zapas q me quedan pequeñas, como lo hago", "intent": "return_item", "region": "es-ES", "features": ["slang"], "synthetic": false}
 {"id": "oye-0121", "text": "se puede devolver algo si ya lo he abierto o no", "intent": "return_item", "region": "es-ES", "features": ["typo"], "synthetic": false}
-{"id": "oye-0122", "text": "Buenas, el plazo de devolucion cuanto es?", "intent": "return_item", "region": "es-ES", "features": ["typo"], "synthetic": false}
-{"id": "oye-0123", "text": "A que hora abris mañana?", "intent": "opening_hours", "region": "es-ES", "features": ["typo"], "synthetic": false}
-{"id": "oye-0124", "text": "estais abiertos el finde?", "intent": "opening_hours", "region": "es-ES", "features": ["typo"], "synthetic": false}
+{"id": "oye-0122", "text": "Buenas, el plazo de devolucion cuanto es?", "intent": "return_item", "region": "es-ES", "features": ["typo", "missing-opening-mark"], "synthetic": false}
+{"id": "oye-0123", "text": "A que hora abris mañana?", "intent": "opening_hours", "region": "es-ES", "features": ["typo", "missing-opening-mark"], "synthetic": false}
+{"id": "oye-0124", "text": "estais abiertos el finde?", "intent": "opening_hours", "region": "es-ES", "features": ["typo", "missing-opening-mark"], "synthetic": false}
 {"id": "oye-0125", "text": "Hasta q hora se puede llamar hoy", "intent": "opening_hours", "region": "es-ES", "features": ["abbreviation", "typo"], "synthetic": false}
-{"id": "oye-0126", "text": "Quiero pedir cita pa la semana q viene, hay hueco?", "intent": "book_appointment", "region": "es-ES", "features": ["abbreviation"], "synthetic": false}
-{"id": "oye-0127", "text": "me dais cita el jueves x la tarde??", "intent": "book_appointment", "region": "es-ES", "features": ["abbreviation", "typo"], "synthetic": false}
+{"id": "oye-0126", "text": "Quiero pedir cita pa la semana q viene, hay hueco?", "intent": "book_appointment", "region": "es-ES", "features": ["abbreviation", "missing-opening-mark"], "synthetic": false}
+{"id": "oye-0127", "text": "me dais cita el jueves x la tarde??", "intent": "book_appointment", "region": "es-ES", "features": ["abbreviation", "typo", "missing-opening-mark", "repeated-punctuation"], "synthetic": false}
 {"id": "oye-0128", "text": "a ver, necesito cambiar la cita del lunes q no puedo ir", "intent": "book_appointment", "region": "es-ES", "features": ["abbreviation", "filler"], "synthetic": false}
 {"id": "oye-0129", "text": "Holaa buenas", "intent": "greeting", "region": "es-ES", "features": ["typo"], "synthetic": false}
 {"id": "oye-0130", "text": "ey q tal", "intent": "greeting", "region": "es-ES", "features": ["slang", "abbreviation"], "synthetic": false}
 {"id": "oye-0131", "text": "Vale gracias, ya esta", "intent": "farewell", "region": "es-ES", "features": ["typo"], "synthetic": false}
-{"id": "oye-0132", "text": "ok perfe, gracias!!", "intent": "farewell", "region": "es-ES", "features": ["abbreviation", "slang"], "synthetic": false}
-{"id": "oye-0133", "text": "Donde esta mi pedido? pone q llegaba ayer", "intent": "track_order", "region": "es-ES", "features": ["typo", "abbreviation"], "synthetic": false}
-{"id": "oye-0134", "text": "sabeis algo del paquete? q no me llega", "intent": "track_order", "region": "es-ES", "features": ["typo", "abbreviation"], "synthetic": false}
-{"id": "oye-0135", "text": "el pedido sigue en reparto desde el lunes, es normal??", "intent": "track_order", "region": "es-ES", "features": ["typo"], "synthetic": false}
+{"id": "oye-0132", "text": "ok perfe, gracias!!", "intent": "farewell", "region": "es-ES", "features": ["abbreviation", "slang", "repeated-punctuation"], "synthetic": false}
+{"id": "oye-0133", "text": "Donde esta mi pedido? pone q llegaba ayer", "intent": "track_order", "region": "es-ES", "features": ["typo", "abbreviation", "missing-opening-mark"], "synthetic": false}
+{"id": "oye-0134", "text": "sabeis algo del paquete? q no me llega", "intent": "track_order", "region": "es-ES", "features": ["typo", "abbreviation", "missing-opening-mark"], "synthetic": false}
+{"id": "oye-0135", "text": "el pedido sigue en reparto desde el lunes, es normal??", "intent": "track_order", "region": "es-ES", "features": ["typo", "missing-opening-mark", "repeated-punctuation"], "synthetic": false}
 {"id": "oye-0136", "text": "el link de seguimiento no funciona, me sale error random", "intent": "track_order", "region": "es-ES", "features": ["typo", "slang"], "synthetic": false}
 {"id": "oye-0137", "text": "No me deja pagar con la tarjeta, me da error todo el rato", "intent": "payment_failed", "region": "es-ES", "features": [], "synthetic": false}
 {"id": "oye-0138", "text": "me ha cobrado pero el pedido no aparece xd", "intent": "payment_failed", "region": "es-ES", "features": ["slang"], "synthetic": false}
-{"id": "oye-0139", "text": "Intento pagar y se queda cargando...", "intent": "payment_failed", "region": "es-ES", "features": ["ellipsis"], "synthetic": false}
+{"id": "oye-0139", "text": "Intento pagar y se queda cargando...", "intent": "payment_failed", "region": "es-ES", "features": ["ellipsis", "repeated-punctuation"], "synthetic": false}
 {"id": "oye-0140", "text": "literal llevo una hora intentando pagar", "intent": "payment_failed", "region": "es-ES", "features": ["slang"], "synthetic": false}

@@ -19,7 +19,9 @@ def test_schema_features_closed_set() -> None:
     assert set(enum) == {
         "slang", "ellipsis", "typo", "diminutive",
         "code-switching", "filler", "abbreviation",
+        "emoji", "repeated-punctuation", "missing-opening-mark",
     }
+    assert "nonexistent" not in enum
 
 
 def test_schema_synthetic_is_boolean_default_false_and_optional() -> None:
