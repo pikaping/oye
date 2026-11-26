@@ -29,6 +29,34 @@ print(entries[0].text)
 
 `load_corpus` validates every line and raises `CorpusError` with `<path>:<line>` on the first invalid one.
 
+## Validating
+
+Check corpus files for format errors and duplicates with:
+
+```
+python -m corpus.validate [--strict] [PATH ...]
+```
+
+Without paths it validates `corpus/data/`. Paths may be files or directories.
+Every problem is printed as `file:line: code: message`, followed by a summary.
+The validator reports all problems, never stops at the first one, and never modifies any text.
+
+Exit codes:
+
+- `0`: no errors.
+- `1`: at least one error (or, with `--strict`, at least one warning).
+
+Duplicates:
+
+- **Exact duplicate** (error): the same `id` or exactly the same `text` appears more than once.
+- **Near-duplicate** (warning): texts that differ but are equal once normalized
+  (lowercase, no accents, no punctuation, collapsed spaces), e.g. `Cuanto cuesta?` and `cuánto cuesta`.
+
+Warnings do not change the exit code unless you pass `--strict`, which treats them as errors.
+
+This validator is the basis of the next milestone, a CI check. That workflow will be staged in `ci/`
+and noted in `NOTES.md` for the author to move into place.
+
 ## Labeling
 
 See the [labeling guide](LABELING.md) for feature criteria, intents, regions and anonymization rules.

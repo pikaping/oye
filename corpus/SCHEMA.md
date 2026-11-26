@@ -3,6 +3,7 @@
 Each file in `corpus/data/` is JSONL: one JSON object per line, UTF-8.
 The machine-readable definition is [`schema.json`](schema.json) (JSON Schema).
 For how to label each field and feature, see the [labeling guide](LABELING.md).
+To check files against this format, see [Validating](README.md#validating).
 
 | Field       | Type      | Required | Description |
 |-------------|-----------|----------|-------------|
