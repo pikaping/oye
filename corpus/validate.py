@@ -1,9 +1,23 @@
-"""Duplicate detection for Oye Corpus entries. Never modifies entry text."""
+"""Validation for Oye Corpus files. Never modifies entry text.
+
+Library: ``find_duplicates`` and ``validate_paths`` (reports all problems).
+
+Command line::
+
+    python -m corpus.validate [--strict] [PATH ...]
+
+Without paths it validates ``corpus/data/``. Paths may be files or
+directories. Each problem is printed as ``file:line: code: message``, followed
+by a summary. Exit code is 0 when there are no errors, 1 otherwise. Warnings
+(near-duplicates) only fail with ``--strict``.
+"""
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
+import sys
 import unicodedata
 from collections import defaultdict
 from collections.abc import Iterable
@@ -144,3 +158,34 @@ def validate_paths(paths: Iterable[str | Path]) -> list[Issue]:
                 issues.append(Issue(file, lineno, kind, msg, severity))
     issues.sort(key=lambda i: (i.file, i.line, i.code))
     return issues
+
+
+DEFAULT_DATA_DIR = Path(__file__).resolve().parent / "data"
+
+
+def main(argv: list[str] | None = None) -> int:
+    """Run the validator from the command line. Returns the process exit code."""
+    parser = argparse.ArgumentParser(
+        prog="python -m corpus.validate",
+        description="Validate Oye Corpus JSONL files and report every problem found.",
+    )
+    parser.add_argument(
+        "paths", nargs="*", help="JSONL files or directories (default: corpus/data/)"
+    )
+    parser.add_argument(
+        "--strict", action="store_true", help="treat warnings (near-duplicates) as errors"
+    )
+    args = parser.parse_args(argv)
+    paths: list[str | Path] = list(args.paths) or [DEFAULT_DATA_DIR]
+    issues = validate_paths(paths)
+    for issue in issues:
+        print(f"{issue.file}:{issue.line}: {issue.code}: {issue.message}")
+    errors = sum(1 for i in issues if i.severity == "error")
+    warnings = len(issues) - errors
+    print(f"{errors} error(s), {warnings} warning(s)")
+    failed = errors > 0 or (args.strict and warnings > 0)
+    return 1 if failed else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
