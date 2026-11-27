@@ -7,7 +7,7 @@ Un hito por semana. La semana empieza el lunes indicado.
 - [x] 2026-12-07 · Formato JSONL del corpus (frase, intención, región, rasgos) + primeras 100 frases
 - [x] 2026-12-14 · Esquema de etiquetado + plantilla de issue para aportar frases
 - [x] 2026-12-21 · Validador de formato y duplicados
-- [ ] 2026-12-28 · Validación del corpus en CI para cada PR
+- [x] 2026-12-28 · Validación del corpus en CI para cada PR
 - [ ] 2027-01-04 · Campo de región + 300 frases
 - [ ] 2027-01-11 · Notebook: Oye Corpus contra un agente Dialogflow CX
 - [ ] 2027-01-18 · Generador de variantes con Gemini (marcadas como sintéticas)

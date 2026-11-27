@@ -32,3 +32,13 @@ def test_contributing_mentions_conventions() -> None:
     text = _read("CONTRIBUTING.md")
     assert "Conventional Commits" in text
     assert "pytest" in text
+
+
+def test_corpus_ci_doc_is_complete_and_linked() -> None:
+    doc = _read("docs/corpus-ci.md")
+    assert "ci/corpus-validate.yml" in doc
+    assert ".github/workflows/" in doc
+    assert "python -m corpus.validate --strict corpus/data" in doc
+    assert "pytest" in doc
+    assert "file:line" in doc
+    assert "](../docs/corpus-ci.md)" in _read("corpus/README.md")

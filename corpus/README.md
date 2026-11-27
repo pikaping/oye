@@ -56,6 +56,7 @@ Warnings do not change the exit code unless you pass `--strict`, which treats th
 
 This validator is the basis of the next milestone, a CI check. That workflow will be staged in `ci/`
 and noted in `NOTES.md` for the author to move into place.
+See [docs/corpus-ci.md](../docs/corpus-ci.md) for what it checks and how to run it locally.
 
 ## Labeling
 
