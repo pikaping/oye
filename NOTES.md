@@ -10,3 +10,4 @@
 ## Pendiente del autor
 
 - Mover `ci/ISSUE_TEMPLATE/` a `.github/ISSUE_TEMPLATE/`.
+- Mover `ci/corpus-validate.yml` a `.github/workflows/`.

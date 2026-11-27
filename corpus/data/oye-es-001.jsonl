@@ -1,4 +1,4 @@
-{"id": "oye-0001", "text": "¿Cuánto me queda en la cuenta?", "intent": "check_balance", "region": "es-ES", "features": [], "synthetic": true}
+{"id": "oye-0001", "text": "ey q pasta me queda en la cuenta xfa", "intent": "check_balance", "region": "es-ES", "features": ["slang", "typo", "abbreviation", "missing-opening-mark"], "synthetic": true}
 {"id": "oye-0002", "text": "oye, ¿cuánta lana tengo en la tarjeta?", "intent": "check_balance", "region": "es-MX", "features": ["slang"], "synthetic": true}
 {"id": "oye-0003", "text": "Decime cuánta plata me queda en la cuenta, che", "intent": "check_balance", "region": "es-AR", "features": ["slang"], "synthetic": true}
 {"id": "oye-0004", "text": "saldo pls", "intent": "check_balance", "region": "es-ES", "features": ["ellipsis", "abbreviation"], "synthetic": true}
